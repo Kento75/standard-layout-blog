@@ -19,6 +19,7 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
+/* header */
 .header {
   width: 100%;
   padding: 28px 0 10px;
@@ -30,8 +31,8 @@ a:link, a:visited, a:hover, a:active {
   height: 56px;
   margin: 0 auto;
   background: url("../images/logo.png") no-repeat;
-  overflow: hidden;  /* SEO1 */
-  text-indent: 100%;  /* SEO2 */
+  overflow: hidden;     /* SEO1 */
+  text-indent: 100%;    /* SEO2 */
   white-space: nowrap;  /* SEO3 */
 }
 
@@ -41,6 +42,35 @@ a:link, a:visited, a:hover, a:active {
   height: 100%;
 }
 
+.global-nav {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.global-nav .nav-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.global-nav .nav-item a {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 8px;
+  color: #666666;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  transition: 1.0s;  /* カーソルが当たった時にふわっとさせる */
+}
+
+.global-nav .nav-item.active a,
+.global-nav .nav-item a:hover {
+  background-color: #d03c56;
+}
+
+/* article */
 .wrapper {
   width: 970px;
   margin: 30px auto 40px;
@@ -57,10 +87,13 @@ a:link, a:visited, a:hover, a:active {
   width: 275px;
 }
 
+
+/* footer */
 .footer {
   width: 100%;
 }
 
+/* clearfix */
 .clearfix::after {
   content: "";
   display: block;

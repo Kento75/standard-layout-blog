@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;  /* フォントサイズを16pxから10pxに変換 */
+}
+
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  padding: 28px 0 10px;
+  background: url("../images/bg-header.gif") repeat-x;
+}
+
+.logo {
+  width: 225px;
+  height: 56px;
+  margin: 0 auto;
+  background: url("../images/logo.png") no-repeat;
+  overflow: hidden;  /* SEO1 */
+  text-indent: 100%;  /* SEO2 */
+  white-space: nowrap;  /* SEO3 */
+}
+
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 970px;
+  margin: 30px auto 40px;
+}
+
+.main {
+  display: block;  /* IE対応 */
+  float: left;
+  width: 660px;
+}
+
+.sidemenu {
+  float: right;
+  width: 275px;
+}
+
+.footer {
+  width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* レイアウト確認用スタイル */
+/*
+.header, .main, .sidemenu, .footer {
+  border: 1px solid #aaaaaa;
+  background-color: #cccccc;
+}
+.header, footer {
+  height: 100px;
+}
+.main, .sidemenu {
+  height: 500px;
+}
+*/

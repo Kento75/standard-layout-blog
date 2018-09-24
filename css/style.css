@@ -88,11 +88,6 @@ a:link, a:visited, a:hover, a:active {
   width: 660px;
 }
 
-.sidemenu {
-  float: right;
-  width: 275px;
-}
-
 .hot-topic {
   display: block;
   height: 300px;
@@ -273,15 +268,17 @@ a:link, a:visited, a:hover, a:active {
 
 
 /*
-  footer
+  sidemenu
 */
-.footer {
-  width: 100%;
+.sidemenu {
+  float: right;
+  width: 275px;
 }
 
 .ranking {
   margin-bottom: 30px;
   list-style-type: none;
+  counter-reset: ranking;
 }
 
 .ranking .ranking-item {
@@ -291,11 +288,11 @@ a:link, a:visited, a:hover, a:active {
 .ranking .ranking-item a {
   display: block;
   font-size: 0;
-  transition: opacity 1.0s;
+  transition: opacity 0.15s;
 }
 
 .ranking .ranking-item a:hover {
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 .ranking .image {
@@ -303,17 +300,51 @@ a:link, a:visited, a:hover, a:active {
   height: 55px;
 }
 
-.raking .order {
+.ranking .order {
   display: inline-block;
   width: 18px;
   height: 18px;
   margin: 0 10px;
   border: 1px solid #ccc;
   color: #aaa;
-  vertical-align: 20px;  /* ランキング画像の中央にくるように調整 */
+  vertical-align: 20px;
   text-align: center;
   font-weight: bold;
   line-height: 16px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.ranking .order::before {
+  content: counter(ranking);
+  display: inline-block;
+  counter-increment: ranking;
+  font-size: 1.0rem;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.ranking .ranking-item:nth-of-type(1) .order,
+.ranking .ranking-item:nth-of-type(2) .order,
+.ranking .ranking-item:nth-of-type(3) .order {
+  border: none;
+  color: #fff;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+.ranking .ranking-item:nth-of-type(1) .order {
+  background-color: #dab413;
+}
+
+.ranking .ranking-item:nth-of-type(2) .order {
+  background-color: #6e7b84;
+}
+
+.ranking .ranking-item:nth-of-type(3) .order {
+  background-color: #a0541a;
 }
 
 .ranking .text {
@@ -323,6 +354,14 @@ a:link, a:visited, a:hover, a:active {
   vertical-align: top;
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+
+/*
+  footer
+*/
+.footer {
+  width: 100%;
 }
 
 

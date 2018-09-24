@@ -447,6 +447,9 @@ a:link, a:visited, a:hover, a:active {
 /* -------------------------------- */
 .footer {
   width: 100%;
+  padding: 20px 0 30px;
+  background: #2d3d54 url("../images/bg-footer.gif");
+  color: #fff;
 }
 
 
@@ -455,6 +458,34 @@ a:link, a:visited, a:hover, a:active {
 /* -------------------------------- */
 .hidden {
   display: none;
+}
+
+.horizontal-list {
+  width: 970px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 0;
+}
+
+.horizontal-list .horizontal-item {
+  display: inline-block;
+  padding: 0 15px;
+  letter-spacing: 1px;
+}
+
+.horizontal-list .horizontal-item + .horizontal-item {
+  border-left: 1px solid #bbb;
+}
+
+.horizontal-list .horizontal-item a {
+  border-bottom: 1px dashed #777;
+  color: #bbb;
+  font-size: 1.1rem;
+  transition: color 1.0s;
+}
+
+.horizontal-list .horizontal-item a:hover {
+  color: #d03c56;
 }
 
 

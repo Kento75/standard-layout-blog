@@ -452,14 +452,6 @@ a:link, a:visited, a:hover, a:active {
   color: #fff;
 }
 
-
-/* -------------------------------- */
-/* hidden  WHITE SEO
-/* -------------------------------- */
-.hidden {
-  display: none;
-}
-
 .horizontal-list {
   width: 970px;
   margin: 0 auto;
@@ -486,6 +478,24 @@ a:link, a:visited, a:hover, a:active {
 
 .horizontal-list .horizontal-item a:hover {
   color: #d03c56;
+}
+
+
+/* -------------------------------- */
+/* copyright
+/* -------------------------------- */
+.copyright {
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+/* -------------------------------- */
+/* hidden  WHITE SEO
+/* -------------------------------- */
+.hidden {
+  display: none;
 }
 
 

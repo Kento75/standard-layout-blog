@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+/* -------------------------------- */
+/* common
+/* -------------------------------- */
 html {
   font-size: 62.5%;  /* フォントサイズを16pxから10pxに変換 */
 }
@@ -20,9 +23,9 @@ a:link, a:visited, a:hover, a:active {
 }
 
 
-/*
-  header
-*/
+/* -------------------------------- */
+/* header elements
+/* -------------------------------- */
 .header {
   width: 100%;
   padding: 28px 0 10px;
@@ -74,9 +77,9 @@ a:link, a:visited, a:hover, a:active {
 }
 
 
-/* 
-  main
-*/
+/* -------------------------------- */
+/* main elements
+/* -------------------------------- */
 .wrapper {
   width: 970px;
   margin: 30px auto 40px;
@@ -88,6 +91,10 @@ a:link, a:visited, a:hover, a:active {
   width: 660px;
 }
 
+
+/* -------------------------------- */
+/* hot-topic elements
+/* -------------------------------- */
 .hot-topic {
   display: block;
   height: 300px;
@@ -142,6 +149,9 @@ a:link, a:visited, a:hover, a:active {
   line-height: 1;
 }
 
+/* -------------------------------- */
+/* heading elements
+/* -------------------------------- */
 .heading {
   padding: 10px 12px;
   background: url("../images/bg-slash.gif");
@@ -149,6 +159,9 @@ a:link, a:visited, a:hover, a:active {
   font-size: 1.6rem;
 }
 
+/* -------------------------------- */
+/* news elements
+/* -------------------------------- */
 .scroll-list {
   max-height: 220px;
   overflow-y: auto;
@@ -206,6 +219,9 @@ a:link, a:visited, a:hover, a:active {
   font-size: 1.2rem;
 }
 
+/* -------------------------------- */
+/* article elements
+/* -------------------------------- */
 .article-box {
   position: relative;
   display: block;
@@ -267,14 +283,18 @@ a:link, a:visited, a:hover, a:active {
 }
 
 
-/*
-  sidemenu
-*/
+/* -------------------------------- */
+/* sidemenu
+/* -------------------------------- */
 .sidemenu {
   float: right;
   width: 275px;
 }
 
+
+/* -------------------------------- */
+/* ranking elements
+/* -------------------------------- */
 .ranking {
   margin-bottom: 30px;
   list-style-type: none;
@@ -356,33 +376,67 @@ a:link, a:visited, a:hover, a:active {
   line-height: 1.5;
 }
 
+/* -------------------------------- */
+/* documents elements
+/* -------------------------------- */
+.documents {
+  margin: 10px 10px 30px;
+}
 
-/*
-  footer
-*/
+.documents, .documents ul {
+  list-style-type: none;
+}
+
+.documents > li .title {
+  margin: 15px 0;
+  padding-left: 5px solid #d03c56;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.documents > li ul {
+  margin: 15px;
+}
+
+.documents > li ul > li {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  background: url("../images/arrow.gif") no-repeat left center;
+}
+
+.documents a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* -------------------------------- */
+/* footer elements
+/* -------------------------------- */
 .footer {
   width: 100%;
 }
 
 
-/*
-  hidden  WHITE SEO
-*/
+/* -------------------------------- */
+/* hidden  WHITE SEO
+/* -------------------------------- */
 .hidden {
   display: none;
 }
 
 
-/*
-  clearfix
-*/
+/* -------------------------------- */
+/* clearfix
+/* -------------------------------- */
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* レイアウト確認用スタイル */
+/* -------------------------------- */
+/* レイアウト確認用スタイル
 /*
 .header, .main, .sidemenu, .footer {
   border: 1px solid #aaaaaa;
